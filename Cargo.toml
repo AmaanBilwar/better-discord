@@ -1,0 +1,9 @@
+[package]
+name = "gpui-discord"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+gpui = { version = "*" }
+gpui-component = "0.5.0-preview2"
