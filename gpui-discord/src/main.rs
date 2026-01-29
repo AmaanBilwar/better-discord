@@ -24,7 +24,7 @@ struct AppRoot {
 }
 
 impl Render for AppRoot {
-    fn render(&mut self, _: &mut Window, cx: &mut Context<Self>) -> impl Element {
+    fn render(&mut self, _: &mut Window, cx: &mut Context<Self>) -> impl IntoElement {
         let screen = self.app_state.read(cx).current_screen;
         div().size_full().child(match screen {
             Screen::Welcome => self.welcome_view.clone().into_any_element(),
